@@ -1,0 +1,27 @@
+body {
+    background-color: red;
+    vertical-align: middle;
+}
+
+.header {
+    background-color: purple;
+    color: orange;
+    margin-top: "0px";
+    width: auto;
+    margin: auto;
+}
+
+#timer {
+    text-align: left;
+}
+
+#high-score {
+    text-align: right;
+}
+
+.container {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
