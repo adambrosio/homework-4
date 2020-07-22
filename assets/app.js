@@ -27,6 +27,10 @@ const questions = [
         title: "The less than/or equal operator is: ",
         // choices: ["<=", ">>", "+=", ">="],
         answer: "<="
+    },
+    {
+        title: `Which of the following is a programming "language"?`,
+        answer: ""
     }
 ];
 
