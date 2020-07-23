@@ -28,7 +28,7 @@ const questions = [
     },
     {
         title: `Which of the following is a programming "language"?`,
-        answer: ""
+        answer: "Javascript"
     }
 ];
 
