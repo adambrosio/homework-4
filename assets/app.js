@@ -33,8 +33,8 @@ const questions = [
 ];
 
 // Should start game and time be one function?
-function startGame() {
-
+function startGame(event) {
+    event.preventDefault();
 }
 
 function getQuestion() {
