@@ -6,15 +6,13 @@ var questionEl = document.getElementById("questions");
 var answerBtn = document.getElementById("answer");
 var potentionalAns = document.getElementById("potential");
 var realTimeQuestionIndex = 0;
-// const questions1 = questions;
-// var time = questions.length;
 
-
-// Click event listeners
+// Click event listeners for buttons
 startBtn.addEventListener("click", startGame);
 // startBtn.addEventListener("click", startTime);
 nextBtn.addEventListener("click", nextQuestion);
 
+// Questions and answers variable set to array of objects containing questions
 const questions = [
     {
         title: "An array is enclosed in: ",
@@ -40,9 +38,9 @@ function startGame() {
 }
 
 function getQuestion() {
- let currentQuest = questions[realTimeQuestionIndex]; // also timer
- let questionTitle = document.getElementById("title-of-question")
- potentionalAns.innerHTML = "";
+    let currentQuest = questions[realTimeQuestionIndex]; // also timer
+    let questionTitle = document.getElementById("title-of-question")
+    potentionalAns.innerHTML = "";
     questionTitle.textContent = currentQuest;
     currentQuest.answer.forEach(function (answer, i) {
         var answerEl = document.createElement("button");
@@ -53,7 +51,7 @@ function getQuestion() {
     })
     
 }
-
+// console.log questions declaration with questions and answers
 console.log(questions);
 
 function nextQuestion() {

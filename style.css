@@ -1,11 +1,11 @@
 body {
-    background-color: red;
+    background-color: green;
     vertical-align: middle;
 }
 
 .header {
-    background-color: purple;
-    color: orange;
+    background-color: black;
+    color: white;
     margin-top: "0px";
     width: auto;
     margin: auto;
