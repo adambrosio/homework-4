@@ -7,11 +7,6 @@ var answerBtn = document.getElementById("answer");
 var potentionalAns = document.getElementById("potential");
 var realTimeQuestionIndex = 0;
 
-// Click event listeners for buttons
-startBtn.addEventListener("click", startGame);
-// startBtn.addEventListener("click", startTime);
-nextBtn.addEventListener("click", nextQuestion);
-
 // Questions and answers variable set to array of objects containing questions
 const questions = [
     {
@@ -31,6 +26,13 @@ const questions = [
         answer: "Javascript"
     }
 ];
+
+// Click event listeners for buttons
+startBtn.addEventListener("click", startGame);
+// startBtn.addEventListener("click", startTime);
+nextBtn.addEventListener("click", nextQuestion);
+
+
 
 // Should start game and time be one function?
 function startGame(event) {
