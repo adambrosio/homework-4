@@ -50,11 +50,15 @@ function getQuestion() {
         answerEl.setAttribute("value", "answer");
         answerEl.textContent = i + 1 + answer;
         potentionalAns.appendChild(answerEl);
+        potentionalAns.append(questions[0]);
+        
     })
     
 }
+
+getQuestion();
 // console.log questions declaration with questions and answers
-console.log(questions);
+// console.log(questions);
 
 function nextQuestion() {
 
