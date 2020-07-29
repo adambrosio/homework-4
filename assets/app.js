@@ -12,12 +12,12 @@ const questions = [
     {
         title: "An array is enclosed in: ",
         // choices: [
-        //     "curly brackets", "quotes", "square brackets", "parentheses"
+        //     "curly braces", "quotes", "square brackets", "parentheses"
         // ],
         answer: "square brackets"
     },
     {
-        title: "The less than/or equal operator is: ",
+        title: "The less than/or equal to operator is: ",
         // choices: ["<=", ">>", "+=", ">="],
         answer: "<="
     },
@@ -56,7 +56,6 @@ function getQuestion() {
     
 }
 
-getQuestion();
 // console.log questions declaration with questions and answers
 // console.log(questions);
 
