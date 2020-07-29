@@ -28,4 +28,10 @@ body {
 
 .controls {
     text-align: center;
+    border-color: white;
+    border-style: solid;
+}
+
+.hide {
+    display: none;
 }
