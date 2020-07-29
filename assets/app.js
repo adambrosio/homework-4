@@ -42,6 +42,7 @@ function startGame() {
     startBtn.setAttribute("class", "hide");
     questionEl.removeAttribute("class");
     getQuestion();
+    // timer function
 }
 
 function getQuestion() {
@@ -65,24 +66,32 @@ console.log(questions);
 function nextQuestion() {
     if (this.value === questions[realTimeIndex].answer) {
         console.log("correct");
+        if (realTimeIndex === questions.length) {
+            endGame();
+        } else {
+            realTimeIndex++;
+            getQuestion();
+        }
     } else {
         console.log("incorrect");
-    }
+    } 
 }
 
-function startTimer() {
+function timer() {
 
 }
 
+function endGame() {
+    console.log("game over");
+}
+// realtimeindex increments
+// score will increase or decrease
+// if incorrect, deduct time
 
+// endGame function
+// add hide class back to qs div
+// remove hide class from the score div
 
-
-// Hide start button
-
-
-
-
-
-// function showQuestion() {
-// }
-
+//next question will have conditionals
+// if time hits zero endGame function triggers
+// incorrect answers deducts x amount of time
